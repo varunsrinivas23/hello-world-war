@@ -16,7 +16,7 @@ pipeline {
         }
         stage('tomcat installation') {
             steps {
-                sh 'sh tomcat.sh'
+                sh 'sh -s tomcat.sh'
                 echo "tomcat installed"
             }
         }
